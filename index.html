@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pleasure Island</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Lato:ital@1&family=Source+Serif+Pro:wght@300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+          <div class="logo">
+            <img src="images/waves.png" alt="waves">
+              
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="community.html">Community</a></li>
+              <li><a href="membership.html">Membership</a></li>
+            </ul>
+              
+          </div>
+          <div class="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+      </nav>
+  </div>
+  <section class="hero">
+    
+            <h2>PLEASURE ISLAND</h2>
+            
+       
+</section>
+<div class="container1">
+  <main>
+      <div class="site">
+
+          <div class="site-post">
+              <div class="thumbnail">
+                  <img src="images/kurebeach1.jpg" alt="">
+              </div>
+              <div class="content">
+               <h3>Kure Beach</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+          </div>
+
+          <div class="site-post">
+              <div class="thumbnail">
+                  <img src="images/carolina.jpg" alt="">
+              </div>
+              <div class="content">
+                  <h3>Carolina Beach</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, fuga minus sapiente exercitationem laborum nihil dolor excepturi, quos eligendi fugit quaerat ab alias. Ducimus, velit hic assumenda quia asperiores nobis.</p>
+                  
+              </div>
+          </div>
+          
+          <div class="site-post">
+              <div class="thumbnail">
+                  <img src="images/fortfisher.jpg" alt="">
+              </div>
+              <div class="content">
+                  
+                  <h3>Fort Fisher</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, fuga minus sapiente exercitationem laborum nihil dolor excepturi, quos eligendi fugit quaerat ab alias. Ducimus, velit hic assumenda quia asperiores nobis.</p>
+                  
+              </div>
+          </div>
+      </div>
+      <aside>
+          <div class="">
+              <header>
+                  <h3>Upcoming Events</h3>
+              </header>
+              <div class="wrapper">
+                  <div class="thumb">
+                      <img src="images/beachparty.jpg" alt="">
+                  </div>
+                  <div class="content1">
+                    <h4>Summer Beach Party</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                  </div>
+              </div>
+
+              <div class="wrapper">
+                  <div class="thumb">
+                      <img src="images/vaction.jpg" alt="">
+                  </div>
+                  <div class="content1">
+                      
+                      <h4>Beat the Heat</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                      
+                  </div>
+              </div>
+
+              <div class="wrapper">
+                  <div class="thumb">
+                      <img src="images/enjoy.jpg" alt="">
+                  </div>
+                  <div class="content1">
+                      <h4>Play and Enjoy</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                  </div>
+              </div>
+            </div>
+      </aside>
+  </main>
+</div>
+<footer>
+  <div class="container">
+      <div class="footer">
+          <div class="footer-menu">
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+              <p>Copyright &copy; Pleasure Island Chamber of Commerce. All Rights Reserved</p>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i> 
+            <i class="fa-brands fa-linkedin"></i> 
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+    <script>
+      const mobileMenu = document.querySelector('.mobile-menu')
+      const scrollBtn = document.querySelector('.scroll-top')
+
+mobileMenu.addEventListener('click',()=>{
+    document.querySelector('.menu').classList.toggle('show')
+})
+
+// first function
+window.addEventListener('scroll',function(){
+    if(document.body.scrollTop>100 || document.documentElement.scrollTop >100){
+        scrollBtn.style.display ="block"
+    }else{
+        scrollBtn.style.display ="none"
+    }
+})
+
+// second function
+scrollBtn.addEventListener('click',()=>{
+    document.documentElement.scrollTop = 0;
+})
+    </script>
+  </body>
+</html>
